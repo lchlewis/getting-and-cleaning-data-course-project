@@ -13,7 +13,7 @@
 <p><br />
 </p>
 <p><strong>**2. Extracts only the measurements on the mean and standard deviation for each measurement**</strong></p>
-<p><em>Explaination: Use the grep() function to extract mean and standard deviation measurements to mean_and_std_measurement</em><br />
+<p><em>Explaination: Use the grep() function to extract mean and standard deviation measurements to "mean_and_std_measurement"</em><br />
 </p>
 <ul>
   <li>mean_and_std_measurement &lt;- grep(&quot;-(mean|std)\\(\\)&quot;, features[, 2])</li>
