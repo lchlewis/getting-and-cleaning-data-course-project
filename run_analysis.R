@@ -5,7 +5,6 @@ library(plyr)
 
 # 1. Merge the training and test sets to create one data set
 ###############################################################################
-
 x_train <- read.table("X_train.txt")
 y_train <- read.table("y_train.txt")
 subject_train <- read.table("subject_train.txt")
@@ -25,7 +24,6 @@ subject_data <- rbind(subject_train, subject_test)
 
 # 2. Extract only the measurements on the mean and standard deviation for each measurement
 ###############################################################################
-
 features <- read.table("features.txt")
 
 # extract only measurements on the mean and standard deviation
@@ -39,7 +37,6 @@ names(x_data) <- features[mean_and_std_measurement, 2]
 
 # 3. Use descriptive activity names to name the activities in the data set
 ###############################################################################
-
 activity <- read.table("activity_labels.txt")
 
 # get the subset from y_data and write back
@@ -59,7 +56,6 @@ complete_data <- cbind(x_data, y_data, subject_data)
 
 # 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 ###############################################################################
-
 tidy_average_data <- ddply(complete_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 write.table(tidy_average_data, "tidy_average_data.txt", row.name=FALSE)
