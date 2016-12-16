@@ -13,7 +13,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 # Deliverables
 
-run_analysis.R: R scripts contains all the code to transform raw data set in a tidy one.
+'run_analysis.R': R scripts contains all the code to transform raw data set in a tidy one.
 
 CodeBook.md: information about the variables, the data, and any transformations or work that was performed to clean up the data.
 
