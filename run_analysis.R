@@ -57,5 +57,4 @@ complete_data <- cbind(x_mergedata, y_mergedata, subject_mergedata)
 # 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 ###############################################################################
 tidy_average_data <- ddply(complete_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
-
 write.table(tidy_average_data, "tidy_average_data.txt", row.name=FALSE)
