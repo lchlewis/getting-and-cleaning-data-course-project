@@ -13,10 +13,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 # Deliverables
 
-R scripts contains all the code to transform raw data set in a tidy one: # run_analysis.R
+run_analysis.R: R scripts contains all the code to transform raw data set in a tidy one.
 
-Information about the variables, the data, and any transformations or work that was performed to clean up the data: CodeBook.md
+CodeBook.md: information about the variables, the data, and any transformations or work that was performed to clean up the data.
 
-Readme file: README.md
+README.md: the Readme file. 
 
-Resultant output file: tidy_average_data.txt 
+tidy_average_data.txt: resultant output file.
