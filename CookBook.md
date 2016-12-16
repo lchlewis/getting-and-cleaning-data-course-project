@@ -40,13 +40,7 @@ names(subject_mergedata) <- "subject"
 
 **5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject**
 
-Explaination: Use cbind() to combine data frame by column
-
-Explaination: Use ddply() from the plyr package to manipulate the data frame 
-
-Explaination: Use colMeans() to calculate column means for a data frame
-
-Explaination: Use write.table() to write the data frame into file 
+Explaination: Use cbind() to combine data frame by column; Use ddply() from the plyr package to manipulate the data frame; Use colMeans() to calculate column means for a data frame; Use write.table() to write the data frame into file 
 
 
 complete_data <- cbind(x_mergedata, y_mergedata, subject_mergedata)
