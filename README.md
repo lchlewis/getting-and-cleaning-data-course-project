@@ -1,15 +1,22 @@
 # Getting and Cleaning Data Course Project
 
-This repository hosts the R code and documentation files for the Data Science's track course "Getting and Cleaning data", available in coursera.
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
-The dataset being used is: Human Activity Recognition Using Smartphones
+This repository hosts the R code and documentation files for the Getting and Cleaning Data Course Project.
+https://github.com/lchlewis/getting-and-cleaning-data-course-project
 
-Files
+A full description is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The code takes for granted all the data is present in the same folder, un-compressed and without names altered.
+Here are the data for the project:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-CodeBook.md describes the variables, the data, and any transformations or work that was performed to clean up the data.
+# Deliverables
 
-run_analysis.R contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just importing the file.
+R scripts contains all the code to transform raw data set in a tidy one: run_analysis.R
 
-The output of the 5th step is called averages_data.txt, and uploaded in the course project's form.
+Information about the variables, the data, and any transformations or work that was performed to clean up the data: CodeBook.md
+
+Readme file: README.md
+
+Resultant output file: tidy_average_data.txt 
