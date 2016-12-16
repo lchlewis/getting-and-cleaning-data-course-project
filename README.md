@@ -19,4 +19,4 @@ CodeBook.md: information about the variables, the data, and any transformations 
 
 README.md: the Readme file. 
 
-tidy_average_data.txt: resultant output file.
+tidy_average_data.txt: resultant tidy data file.
