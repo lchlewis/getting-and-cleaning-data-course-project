@@ -3,7 +3,7 @@
 <p>The R scripts &quot;run_analysis.R&quot; performs the following 5 steps:</p>
 <p>&nbsp;</p>
 <p><strong>**1. Merges the training and the test sets to create one data set** </strong></p>
-<p>Explaination: Use the rbind() function to merge the data sets<br />
+<p>Explaination: Use the rbind() function to merge the data sets by rows<br />
 </p>
 <ul>
   <li>x_mergedata &lt;- rbind(x_train, x_test)</li>
