@@ -14,13 +14,13 @@ y_test <- read.table("y_test.txt")
 subject_test <- read.table("subject_test.txt")
 
 # merge 'x' training and testing data set
-x_data <- rbind(x_train, x_test)
+x_mergedata <- rbind(x_train, x_test)
 
 # merge 'y' training and testing data set
-y_data <- rbind(y_train, y_test)
+y_mergedata <- rbind(y_train, y_test)
 
 # merge 'subject' training and testing data set
-subject_data <- rbind(subject_train, subject_test)
+subject_mergedata <- rbind(subject_train, subject_test)
 
 # 2. Extract only the measurements on the mean and standard deviation for each measurement
 ###############################################################################
@@ -30,29 +30,29 @@ features <- read.table("features.txt")
 mean_and_std_measurement <- grep("-(mean|std)\\(\\)", features[, 2])
 
 # get the subset from x_data and write back
-x_data <- x_data[, mean_and_std_measurement]
+x_mergedata <- x_mergedata[, mean_and_std_measurement]
 
 # change column names 
-names(x_data) <- features[mean_and_std_measurement, 2]
+names(x_mergedata) <- features[mean_and_std_measurement, 2]
 
 # 3. Use descriptive activity names to name the activities in the data set
 ###############################################################################
 activity <- read.table("activity_labels.txt")
 
 # get the subset from y_data and write back
-y_data[, 1] <- activity[y_data[, 1], 2]
+y_mergedata[, 1] <- activity[y_mergedata[, 1], 2]
 
 # add column name
-names(y_data) <- "activity"
+names(y_mergedata) <- "activity"
 
 # 4. Appropriately label the data set with descriptive variable names
 ###############################################################################
 
 # add column name
-names(subject_data) <- "subject"
+names(subject_mergedata) <- "subject"
 
 # combine all the data in a single data set
-complete_data <- cbind(x_data, y_data, subject_data)
+complete_data <- cbind(x_mergedata, y_mergedata, subject_mergedata)
 
 # 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 ###############################################################################
