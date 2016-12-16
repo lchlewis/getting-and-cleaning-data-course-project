@@ -3,7 +3,7 @@
 <p>The R scripts &quot;run_analysis.R&quot; performs the following 5 steps:</p>
 <p>&nbsp;</p>
 <p><strong>**1. Merges the training and the test sets to create one data set** </strong></p>
-<p>Explaination: Use the rbind() function to merge the data sets by rows<br />
+<p><em>Explaination: Use the rbind() function to merge the data sets by rows</em><br />
 </p>
 <ul>
   <li>x_mergedata &lt;- rbind(x_train, x_test)</li>
@@ -13,7 +13,7 @@
 <p><br />
 </p>
 <p><strong>**2. Extracts only the measurements on the mean and standard deviation for each measurement**</strong></p>
-<p>Explaination: Use the grep() function to extract mean and standard deviation measurements to mean_and_std_measurement<br />
+<p><em>Explaination: Use the grep() function to extract mean and standard deviation measurements to mean_and_std_measurement</em><br />
 </p>
 <ul>
   <li>mean_and_std_measurement &lt;- grep(&quot;-(mean|std)\\(\\)&quot;, features[, 2])</li>
@@ -36,7 +36,7 @@
 <p><br />
 </p>
 <p><strong>**5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject**</strong></p>
-<p>Explaination: Use cbind() to combine data frame by column; Use ddply() from the plyr package to manipulate the data frame; Use colMeans() to calculate column means for a data frame; Use write.table() to write the data frame into file <br />
+<p><em>Explaination: Use cbind() to combine data frame by column; Use ddply() from the plyr package to manipulate the data frame; Use colMeans() to calculate column means for a data frame; Use write.table() to write the data frame into file </em><br />
 </p>
 <ul>
   <li>complete_data &lt;- cbind(x_mergedata, y_mergedata, subject_mergedata)</li>
