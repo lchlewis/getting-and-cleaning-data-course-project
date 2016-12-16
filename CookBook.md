@@ -6,6 +6,7 @@ The R scripts "run_analysis.R" performs the following 5 steps:
 Use the rbind() function to merge the data sets
 
 x_mergedata <- rbind(x_train, x_test)
+
 y_mergedata <- rbind(y_train, y_test) 
 subject_mergedata <- rbind(subject_train, subject_test)
 
