@@ -14,6 +14,8 @@ y_mergedata <- rbind(y_train, y_test)
 subject_mergedata <- rbind(subject_train, subject_test)
 
 
+
+
 **2. Extracts only the measurements on the mean and standard deviation for each measurement**
 
 Explaination: Use the grep() function to extract mean and standard deviation measurements to mean_and_std_measurement
@@ -48,3 +50,5 @@ complete_data <- cbind(x_mergedata, y_mergedata, subject_mergedata)
 tidy_average_data <- ddply(complete_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 write.table(tidy_average_data, "tidy_average_data.txt", row.name=FALSE)
+
+
